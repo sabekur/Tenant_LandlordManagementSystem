@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_backround"
+    tools:context="com.yourdomainname.tenant_landlordmanagementsystem.TenantRegistrationFrom">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/tenant_reg"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="#060606"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenatName"
+                    android:paddingLeft="16dp"
+                    android:hint="@string/name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fathername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenatFatherName"
+                    android:paddingLeft="16dp"
+                    android:hint="@string/father_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantbirthdate"
+                    android:paddingLeft="16dp"
+                    android:inputType="date"
+                    android:hint="@string/birth_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/marriage_option"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:text="@string/married"
+                        android:theme="@style/MyRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/unmarrid"
+                        android:theme="@style/MyRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:text="@string/parmanent_address"
+                android:paddingLeft="8dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantaddress"
+                    android:paddingLeft="16dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantProfession"
+                    android:paddingLeft="16dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/professionandPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantReligion"
+                    android:paddingLeft="16dp"
+                    android:inputType="text"
+                    android:hint="@string/religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/educationQuli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantEdcutionalQuli"
+                    android:paddingLeft="16dp"
+                    android:inputType="text"
+                    android:hint="@string/educationalQulification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantMobileNumber"
+                    android:paddingLeft="16dp"
+                    android:inputType="number"
+                    android:hint="@string/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantEmail"
+                    android:paddingLeft="16dp"
+                    android:inputType="textWebEmailAddress"
+                    android:hint="@string/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nationalId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantNationalId"
+                    android:paddingLeft="16dp"
+                    android:inputType="number"
+                    android:hint="@string/national_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pasport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tenantPassport"
+                    android:paddingLeft="16dp"
+                    android:inputType="number"
+                    android:hint="@string/pasport_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+          <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tenantEmergency"
+                    android:text="@string/emergency_contact"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantName2"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantRelation"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantAddress2"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPostalAddress"
+                        android:hint="@string/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mobileNumber2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantMobileNumber2"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/maidDetails"
+                    android:text="@string/employee_name"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/maidname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/maidName"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/maidNid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/maidNationalId"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/national_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/maidMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/maidMobileNumber"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/maidAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/maidAddress2"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPostalAddress"
+                        android:hint="@string/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/driverDetails"
+                    android:text="@string/driver_name"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/dirvername3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/driverName"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/driverNid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/driverNationalId"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/national_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/driverMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/driverMobileNumber"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/driverAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/driverAddress2"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPostalAddress"
+                        android:hint="@string/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/prviousLandLordDetails"
+                    android:text="@string/previous_landlordName"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/previouslandlordrname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/previousLandlordName"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/previousLandlordmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/previousLandlordMobile"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/national_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                 <android.support.design.widget.TextInputLayout
+                    android:id="@+id/previousLandlordAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/previousLandlordAddress2"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPostalAddress"
+                        android:hint="@string/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <TextView
+                android:text="@string/reason_flat_leave"
+                android:paddingLeft="8dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/previousHouseLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/previousHouseLeaveReason"
+                    android:paddingLeft="16dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/presentLandLordDetails"
+                    android:text="@string/present_landlordName"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/presentlandlordrname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/presentLandlordName"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/presentLandlordmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/presentLandlordMobile"
+                        android:paddingLeft="16dp"
+                        android:inputType="number"
+                        android:hint="@string/national_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/presentLandlordAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/presentLandlordAddress2"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPostalAddress"
+                        android:hint="@string/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dateOfpresentHouseStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/presentHouseStart"
+                    android:paddingLeft="16dp"
+                    android:inputType="date"
+                    android:hint="@string/living_date_presentHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/userIdAndPasswordAsk"
+                    android:text="@string/useridAndPasswordAsk"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userIdtenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantUserId"
+                        android:paddingLeft="16dp"
+                        android:inputType="text"
+                        android:hint="@string/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tenantpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tenantPassword"
+                        android:paddingLeft="16dp"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/submit"
+                android:background="@drawable/rounded_button_setting_login"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

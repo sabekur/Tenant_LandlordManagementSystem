@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#064dc7"
+    tools:context="com.yourdomainname.tenant_landlordmanagementsystem.Tenant_All_options.Objection_tanant">
+    <TextView
+        android:text="Tenant objection will add later"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

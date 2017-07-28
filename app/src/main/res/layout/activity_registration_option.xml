@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/layout_backround"
+    tools:context="com.yourdomainname.tenant_landlordmanagementsystem.RegistrationOption">
+    <LinearLayout
+        android:layout_weight=".5"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/landlordbtn"
+            android:text="@string/landlord_reg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#d10c02"
+            android:background="@drawable/rounded_button_setting_login"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/tenantbtn"
+            android:textColor="#182dcc"
+            android:text="@string/tenant_reg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_setting_login"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

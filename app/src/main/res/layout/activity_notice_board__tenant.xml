@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c21f1f"
+    tools:context="com.yourdomainname.tenant_landlordmanagementsystem.Tenant_All_options.Notice_board_Tenant">
+    <TextView
+        android:text="Tenant notice will add later"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

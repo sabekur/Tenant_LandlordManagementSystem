@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:background="@color/layout_backround"
+    tools:context="com.yourdomainname.tenant_landlordmanagementsystem.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="@string/email_text"
+                android:textColorHint="#bbbbbb"
+                android:layout_marginBottom="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#bbbbbb"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="45dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSingIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/login_text"
+            android:background="@drawable/rounded_button_setting_login"
+            />
+        <LinearLayout
+            android:paddingTop="25dp"
+            android:paddingLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/accounttext"
+                android:text="@string/dont_account_text"
+                android:textColor="#28011E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/regisNowText"
+                android:paddingLeft="4dp"
+                android:text="@string/register_now_text"
+                android:textColor="#ca4303"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
